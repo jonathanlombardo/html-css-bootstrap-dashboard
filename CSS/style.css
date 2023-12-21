@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.badge.text-bg-warning {
+  color: white !important;
+}
+
 /* --CUSTOM PROPS */
 
 :root {
@@ -94,10 +98,14 @@ header .dropdown-toggle::after {
   background-color: #ffffff64;
 }
 
+/* content */
+
 #content {
   height: calc(100vh - var(--header-h));
   overflow: auto;
 }
+
+/* content-top */
 
 #plan-block .badge.text-bg-primary {
   background-color: #165bba !important;
@@ -107,12 +115,18 @@ header .dropdown-toggle::after {
   width: 98%;
 }
 
+/* content-main */
+
 #content-main #next-classes.table th:first-of-type {
   width: 100%;
   text-align: start;
 }
 
-#content-main #next-classes.table th,
+#content-main #next-classes.table,
+#content-main #next-classes.table .btn {
+  font-size: 0.8rem;
+}
+
 #content-main #next-classes.table td {
   white-space: nowrap;
 }
@@ -122,7 +136,7 @@ header .dropdown-toggle::after {
 }
 
 #content-main #next-classes .class-avatar {
-  width: 36px;
+  max-width: 30px;
   clip-path: circle(50%);
 }
 
