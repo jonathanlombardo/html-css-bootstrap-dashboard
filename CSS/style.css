@@ -15,6 +15,9 @@
   --li-width: 1.5em; /* markerwidth lista FontAwesome */
 
   --main-color: rgba(255, 0, 0, 0.236);
+
+  /* dimension */
+  --header-h: 80px;
 }
 
 /* -- DEBUG */
@@ -38,3 +41,46 @@
 }
 
 /* ---------------------------------------- */
+
+header {
+  height: var(--header-h);
+}
+
+header .dropdown-toggle::after {
+  display: none;
+}
+
+#navbar-logo-small {
+  width: 50px;
+}
+
+#nav-search-bar.form-control:focus {
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  box-shadow: none;
+}
+
+#bell-dropdown {
+  color: #ff8f00;
+}
+
+#bell-menu {
+  left: auto;
+  right: 0;
+}
+
+#sidebar {
+  height: calc(100vh - var(--header-h));
+  /* width: 150px; */
+  background-image: URL(../img/img/sidebar-bg.png);
+  background-color: #051e34;
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#sidebar a:hover {
+  background-color: #ffffff64;
+}
