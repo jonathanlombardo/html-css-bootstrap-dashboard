@@ -96,7 +96,7 @@
 
         <div id="content" class="w-100">
           <!-- --content-top -->
-          <div id="content-top" class="text-bg-primary text-white mb-3">
+          <div id="content-top" class="text-bg-primary text-white mb-3 py-2">
             <div class="container-fluid d-flex flex-column flex-sm-row justify-content-between gap-4 py-2">
               <!-- blocco plan -->
               <div id="plan-block">
@@ -109,7 +109,12 @@
                 <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean mobile app</span>
                 <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean web app</span>
                 <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean blog app</span>
-                <span class="badge rounded-pill text-bg-primary d-xl-none"><i class="bi bi-plus-lg"></i></span>
+                <button type="button" class="badge rounded-pill text-bg-primary d-xl-none border-0" data-bs-toggle="collapse" data-bs-target="#collapse-badges" aria-expanded="false" aria-controls="collapse-badges"><i class="bi bi-plus-lg"></i></button>
+                <div class="collapse" id="collapse-badges">
+                  <div class="badge rounded-pill text-bg-primary">Boolean mobile app</div>
+                  <div class="badge rounded-pill text-bg-primary">Boolean web app</div>
+                  <div class="badge rounded-pill text-bg-primary">Boolean blog app</div>
+                </div>
               </div>
 
               <!-- blocco students -->
