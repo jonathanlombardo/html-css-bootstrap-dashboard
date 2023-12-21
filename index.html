@@ -28,40 +28,41 @@
   </head>
 
   <body>
-    <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-xl bg-body-tertiary p-0 h-100">
-        <div class="container-fluid flex-nowrap">
-          <!-- brand xl -->
-          <a class="navbar-brand d-none d-xl-block" href="#">
-            <img src="./img/img/logo.svg" alt="" />
-          </a>
+    <div class="overflow-container">
+      <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary p-0 h-100">
+          <div class="container-fluid flex-nowrap">
+            <!-- brand xl -->
+            <a class="navbar-brand d-none d-xl-block" href="#">
+              <img src="./img/img/logo.svg" alt="" />
+            </a>
 
-          <!-- brand small -->
-          <a id="navbar-logo-small" class="navbar-brand d-xl-none" href="#">
-            <img src="./img/img/mobile-logo.png" class="img-fluid" alt="" />
-          </a>
+            <!-- brand small -->
+            <a id="navbar-logo-small" class="navbar-brand d-xl-none" href="#">
+              <img src="./img/img/mobile-logo.png" class="img-fluid" alt="" />
+            </a>
 
-          <!-- searchbar -->
-          <form class="input-group flex-grow-1" role="search">
-            <span class="input-group-text bg-body" id="basic-addon1"><i class="bi bi-search"></i></span>
-            <input id="nav-search-bar" class="form-control me-2 border-start-0" type="search" placeholder="Search" aria-label="Search" />
-          </form>
+            <!-- searchbar -->
+            <form class="input-group flex-grow-1" role="search">
+              <span class="input-group-text bg-body" id="basic-addon1"><i class="bi bi-search"></i></span>
+              <input id="nav-search-bar" class="form-control me-2 border-start-0" type="search" placeholder="Search" aria-label="Search" />
+            </form>
 
-          <!-- xl links -->
-          <ul class="navbar-nav flex-row d-none d-xl-flex">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-list-ul"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-three-dots-vertical"></i></i></a>
-            </li>
-          </ul>
+            <!-- xl links -->
+            <ul class="navbar-nav flex-row d-none d-xl-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-list-ul"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-question-octagon-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-three-dots-vertical"></i></a>
+              </li>
+            </ul>
 
-          <!-- bell-dropdown -->
+            <!-- bell-dropdown -->
             <div id="bell-dropdown" class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"> <i class="bi bi-bell-fill"></i> </a>
               <ul id="bell-menu" class="dropdown-menu">
@@ -70,41 +71,187 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-        </div>
-      </nav>
-    </header>
+          </div>
+        </nav>
+      </header>
 
-    <main class="d-flex">
-      <nav id="sidebar" class="p-3 fs-5">
-        <ul class="d-flex flex-column align-items-center h-100 m-0 list-unstyled">
-          <li>
-            <a class="d-flex" href="#">
-              <i class="me-xl-2 bi bi-house-door-fill"></i><span class="d-none d-xl-inline">Home</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <i class="me-xl-2 bi bi-bar-chart-fill"></i><span class="d-none d-xl-inline">Home</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <i class="me-xl-2 bi bi-reception-4"></i><span class="d-none d-xl-inline">Home</span>
-            </a>
-          </li>
-          <li class="mt-auto">
-            <a class="d-flex" href="#">
-              <i class="me-xl-2 bi bi-gear-fill"></i><span class="d-none d-xl-inline">Home</span>
-            </a>
-          </li>
-          
-        </ul>
-      </nav>
-      <div id="content" class="w-100">
-        <div id="content-top" class="db">content top</div>
-        <div id="content-main" class="db">content main</div>
-      </div>
-    </main>
+      <main class="d-flex">
+        <!-- sidebar -->
+        <nav id="sidebar" class="p-3 fs-5">
+          <ul class="d-flex flex-column align-items-center h-100 m-0 list-unstyled">
+            <li>
+              <a class="d-flex" href="#"> <i class="me-xl-2 bi bi-house-door-fill"></i><span class="d-none d-xl-inline">Home</span> </a>
+            </li>
+            <li>
+              <a class="d-flex" href="#"> <i class="me-xl-2 bi bi-bar-chart-fill"></i><span class="d-none d-xl-inline">Home</span> </a>
+            </li>
+            <li>
+              <a class="d-flex" href="#"> <i class="me-xl-2 bi bi-reception-4"></i><span class="d-none d-xl-inline">Home</span> </a>
+            </li>
+            <li class="mt-auto">
+              <a class="d-flex" href="#"> <i class="me-xl-2 bi bi-gear-fill"></i><span class="d-none d-xl-inline">Home</span> </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="content" class="w-100">
+          <!-- content-top -->
+          <div id="content-top" class="text-bg-primary text-white mb-3">
+            <div class="container-fluid d-flex flex-column flex-sm-row justify-content-between gap-3 py-2">
+              <!-- blocco plan -->
+              <div id="plan-block">
+                <div class="title-wrapper d-flex align-items-center gap-2">
+                  <h1 class="fs-3">Boolean</h1>
+                  <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                </div>
+                <span class="badge rounded-pill text-bg-primary">3 app</span>
+                <i class="bi bi-arrow-right-square"></i>
+                <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean mobile app</span>
+                <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean web app</span>
+                <span class="badge rounded-pill text-bg-primary d-none d-xl-inline">Boolean blog app</span>
+                <span class="badge rounded-pill text-bg-primary d-xl-none"><i class="bi bi-plus-lg"></i></span>
+              </div>
+
+              <!-- blocco students -->
+              <div id="students-block">
+                <p class="fs-6 mb-0">Studenti online negli ultimi 30 minuti</p>
+                <span class="fs-3">125</span>
+              </div>
+
+              <!-- blocco new student -->
+              <div id="new-student-block" class="order-first order-sm-0">
+                <span class="fs-6">Nuovo Studente</span>
+                <button type="button" class="btn btn-outline-light px-2 py-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasForm" aria-controls="offcanvasForm"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- content-main -->
+          <div id="content-main">
+            <div class="container-fluid">
+              <div class="row g-4">
+                <!-- first-section -->
+                <div class="col-xl-8">
+                  <!-- table-card -->
+                  <div class="card mb-4">
+                    <h5 class="card-header fw-semibold">Prossime Classi</h5>
+                    <div class="card-body">
+                      <table id="next-classes" class="table text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Data inizio</th>
+                            <th class="d-none d-md-table-cell" scope="col">ROI</th>
+                            <th class="d-none d-md-table-cell" scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <img class="class-avatar" src="./img/img/class-avatar.jpg" alt="" />
+                              <span>Classe 117</span>
+                            </th>
+                            <td>Mark</td>
+                            <td class="d-none d-md-table-cell">Otto</td>
+                            <td class="d-none d-md-table-cell">@mdo</td>
+                            <td>
+                              <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil"></i></button>
+                              <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash"></i></button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- accordion-card -->
+                  <div class="card mb-4">
+                    <h5 class="card-header fw-semibold">F.A.Q.</h5>
+                    <div class="card-body">
+                      <div class="accordion" id="faq-list">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Come aggiungere un nuovo studente?</button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faq-list">
+                            <div class="accordion-body"><strong>E che ci vuole?!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat officiis facere fugiat corporis omnis nemo numquam, impedit cum quidem dicta deleniti minima suscipit, nam amet quos commodi maiores necessitatibus!</div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Come posso accedere alle informazioni del mio account?</button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-list">
+                            <div class="accordion-body"><strong>Niente di più facile!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quaerat libero fugit veniam deserunt in repellat officia praesentium dolore rem harum porro rerum, consectetur suscipit culpa, provident ipsa. Reprehenderit, adipisci.</div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Posso usare questa dashboard da mobile?</button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq-list">
+                            <div class="accordion-body"><strong>Ovvio, che domande sono?!</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure est iste consequatur, dolor provident dolorum, mollitia voluptatem porro quam officiis nemo obcaecati culpa, a perspiciatis sed eum animi fuga quibusdam!</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- second-section -->
+                <div class="col-xl-4">
+                  <!-- input-card -->
+                  <div class="card mb-4">
+                    <h5 class="card-header fw-semibold">Todo</h5>
+                    <div class="card-body">
+                      <div class="card">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <input type="checkbox" name="kickoff" id="kickoff" />
+                            <label for="kickoff">Kickoff nuove classi</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input type="checkbox" name="lessons" id="lessons" />
+                            <label for="lessons">Lezione su Bootstrap 5 in classe #75</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input type="checkbox" name="github" id="github" />
+                            <label for="github">Controllare username github studenti</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- list-card -->
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="card">
+                        <img src="./img/img/stats.jpeg" class="card-img-top" alt="statistic" />
+
+                        <div class="card-body">
+                          <h5 class="card-text">Utenti attivi</h5>
+                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                          <li class="list-group-item"><a href="#">A link item</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
 
     <!-- --BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

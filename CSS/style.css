@@ -42,6 +42,13 @@
 
 /* ---------------------------------------- */
 
+.overflow-container {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* HEADER */
+
 header {
   height: var(--header-h);
 }
@@ -68,6 +75,8 @@ header .dropdown-toggle::after {
   right: 0;
 }
 
+/* SIDEBAR */
+
 #sidebar {
   height: calc(100vh - var(--header-h));
   /* width: 150px; */
@@ -83,4 +92,50 @@ header .dropdown-toggle::after {
 
 #sidebar a:hover {
   background-color: #ffffff64;
+}
+
+#content {
+  height: calc(100vh - var(--header-h));
+  overflow: auto;
+}
+
+#plan-block .badge.text-bg-primary {
+  background-color: #165bba !important;
+}
+
+#content-main #next-classes.table th:first-of-type {
+  width: 100%;
+  text-align: start;
+}
+
+#content-main #next-classes.table th,
+#content-main #next-classes.table td {
+  white-space: nowrap;
+}
+
+#content-main #next-classes.table th {
+  font-weight: 400;
+}
+
+#content-main #next-classes .class-avatar {
+  width: 36px;
+  clip-path: circle(50%);
+}
+
+#faq-list .accordion-item {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#faq-list .accordion-item:last-of-type {
+  border-bottom: none;
+}
+
+#faq-list .accordion-button:not(.collapsed) {
+  background-color: var(--bs-body-bg);
+  color: inherit;
+}
+
+#faq-list .accordion-button:focus {
+  box-shadow: none;
 }
