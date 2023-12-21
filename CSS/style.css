@@ -111,6 +111,10 @@ header .dropdown-toggle::after {
   background-color: #165bba !important;
 }
 
+#new-student-block {
+  white-space: nowrap;
+}
+
 #offcanvasForm {
   width: 98%;
 }
