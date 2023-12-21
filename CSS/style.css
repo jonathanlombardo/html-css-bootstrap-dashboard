@@ -21,7 +21,7 @@
   --main-color: rgba(255, 0, 0, 0.236);
 
   /* dimension */
-  --header-h: 80px;
+  --header-h: 60px;
 }
 
 /* -- DEBUG */
@@ -52,6 +52,10 @@
 }
 
 /* HEADER */
+
+header {
+  height: var(--header-h);
+}
 
 header .dropdown-toggle::after {
   display: none;
