@@ -123,6 +123,110 @@
                 <span class="fs-6">Nuovo Studente</span>
                 <button type="button" class="btn btn-outline-light px-2 py-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasForm" aria-controls="offcanvasForm"><i class="bi bi-plus-lg"></i></button>
               </div>
+
+              <!-- offcanvas-form -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasForm" aria-labelledby="offcanvasFormLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasFormLabel">Inserisci Nuovo studente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form action="https://learning.tizianonicolai.com/request-catcher/" method="post">
+                    <div class="row">
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="first-name" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Mario" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="last-name" class="form-label">Cognome</label>
+                          <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Rossi" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="mail" class="form-label">Email</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="mail" name="mail" placeholder="mariorossi@mail.com" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" name="password" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="mail-check" class="form-label">Ripeti Email</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="mail-check" name="mail-check" placeholder="mariorossi@mail.com" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="password-check" class="form-label">Ripeti Password</label>
+                          <input type="password" class="form-control" id="password-check" name="password-check" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="address" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="address" name="address" placeholder="Viale Manidal Naso 117" />
+                        </div>
+                      </div>
+
+                      <!-- input -->
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="city" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="city" name="city" placeholder="Roma" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-4">
+                        <label for="country" class="form-label">Stato</label>
+                        <select id="country" name="country" class="form-select" aria-label="Default select example">
+                          <option class="d-none" selected>Scegli...</option>
+                          <option value="it">Italia</option>
+                          <option value="de">Germania</option>
+                          <option value="pa">Principato di Asborduf</option>
+                        </select>
+                      </div>
+                      <!-- input -->
+                      <div class="col-md-2">
+                        <div class="mb-3">
+                          <label for="cap" class="form-label">CAP</label>
+                          <input type="text" class="form-control" id="cap" name="cap" placeholder="00015" />
+                        </div>
+                      </div>
+                      <!-- input -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="upload-pic" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="upload-pic" name="upload-pic" accept=".jpg, .jpeg, .png" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-primary">Salva</button>
+                    <input class="btn btn-warning" type="reset" value="Svuota" />
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
 

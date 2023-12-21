@@ -103,6 +103,10 @@ header .dropdown-toggle::after {
   background-color: #165bba !important;
 }
 
+#offcanvasForm {
+  width: 98%;
+}
+
 #content-main #next-classes.table th:first-of-type {
   width: 100%;
   text-align: start;
@@ -138,4 +142,18 @@ header .dropdown-toggle::after {
 
 #faq-list .accordion-button:focus {
   box-shadow: none;
+}
+
+/* media md */
+@media screen and (min-width: 768px) {
+  #offcanvasForm {
+    width: 80%;
+  }
+}
+
+/* media xl */
+@media screen and (min-width: 1200px) {
+  #offcanvasForm {
+    width: 50%;
+  }
 }
