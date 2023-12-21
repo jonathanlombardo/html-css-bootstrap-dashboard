@@ -53,16 +53,12 @@
 
 /* HEADER */
 
-header {
-  height: var(--header-h);
-}
-
 header .dropdown-toggle::after {
   display: none;
 }
 
 #navbar-logo-small {
-  width: 50px;
+  width: 45px;
 }
 
 #nav-search-bar.form-control:focus {
